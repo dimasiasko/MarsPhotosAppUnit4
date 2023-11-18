@@ -32,7 +32,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         dataBinding = true
@@ -50,4 +50,6 @@ dependencies {
     implementation("androidx.leanback:leanback:1.0.0")
     implementation("androidx.slidingpanelayout:slidingpanelayout:1.2.0-rc01")
     implementation("io.coil-kt:coil:1.1.1")
+    implementation("com.squareup.moshi:moshi-kotlin:1.9.3")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
 }
